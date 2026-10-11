@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerência de Videomonitoramento</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+    <div class="container">
+
+        <h1>Gerência de Videomonitoramento</h1>
+
+        <p class="subtitulo">
+            Painel de Controle do Chatbot
+        </p>
+
+        <div class="status-box">
+            <div class="status">
+                Status: <span id="statusBot">🔴 Parado</span>
+            </div>
+        </div>
+
+        <div class="botoes">
+
+            <button id="btnIniciar" class="iniciar">
+                ▶ INICIAR CHATBOT
+            </button>
+
+            <button id="btnParar" class="parar">
+                ■ PARAR CHATBOT
+            </button>
+
+            <button id="btnLimpar" class="limpar">
+        🧹 NOVO QR CODE
+            </button>
+
+        </div>
+
+        <div id="areaQr" class="qr-container" style="display: none;">
+
+            <h2>📱 Conectar WhatsApp</h2>
+
+            <p>
+                Abra o WhatsApp no celular e acesse
+                <strong>Aparelhos conectados</strong>.
+            </p>
+
+            <p>
+                Toque em <strong>Conectar um aparelho</strong>
+                e escaneie o código abaixo:
+            </p>
+
+            <img
+                id="imagemQr"
+                alt="QR Code do WhatsApp"
+            >
+
+            <p class="qr-aviso">
+                O QR Code é temporário. Se expirar,
+                um novo código será exibido automaticamente.
+            </p>
+
+        </div>
+
+        <div class="log-container">
+
+            <h3>LOG DO SISTEMA</h3>
+
+            <div id="log" class="log">
+                Sistema aguardando inicialização...
+            </div>
+
+        </div>
+
+    </div>
+    <script src="renderer.js"></script>
+    
+</body>
+
+</html>
